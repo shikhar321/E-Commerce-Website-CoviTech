@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Welcome!</title>
+	<link rel="shortcut icon" type="image/x-icon" href="image/fevicon.jpg">
+	<style >
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.line{
+			color: white;
+			size: 3;
+		}
+		.header{
+			background: rgba(0, 51, 0, 0.75); 
+			height: 100vh;;
+		}
+		.video-background{
+			position: absolute;
+			right: 0;
+			left: 0;
+			min-height: 100%;
+			min-width: 100% ;
+			width: auto;
+			height: auto;
+			z-index: -1;
+		}
+
+		@media(min-aspect-ratio: 16/9){
+			.video-background{
+				width: 100%;
+				height: auto;
+			}
+		}
+		@media(max-aspect-ratio: 16/9){
+			.video-background{
+				width: auto;
+				height: 100%;
+			}
+		}
+		.tag{
+			opacity: 0.5;
+		}
+		/*this is button code*/
+		button{
+  background:navy;
+  color:white;
+  border:none;
+  position:relative;
+  height:40px;
+  font-size:0.8em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:white;
+  color:black;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: white;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+	</style>
+</head>
+<body>
+	<section class="header">
+	<video autoplay loop class="video-background"  plays-inline>
+    	<source src="video/dd.mp4" type="video/mp4">
+	</video>
+	<div align="center">
+		<a href="file:///C:/Users/hp'/OneDrive/Desktop/Web_dev_proj/main_page.html"><img src = "image/fevicon.jpg" height="100px" width="100px" class="tag"></a><br>
+		<font color="white" size="10">CoviTech</font>
+		<h1 align="left"><font color="white" size="10"><b><u>What is this site about?</u></b></font> </h1><br>
+		<p align="left"><font color="white" size="6"><b>For the last two years, human civilization has gone through a rough patch that because of Covid-19 but humans are recognized as species who never quit and thanks to this belief humans are fighting against all odds. So, on our part, we tried to provide assistance to our fellow beings by the means of this multi-purpose website. This site provide the following purposes:</b></font></p><br>
+		<p align="left">
+			<font color="white" size="6">&emsp;<b>⦿ Provide Suggestive readings to help fight Covid-19.</b></font><br>
+			<font color="white" size="6">&emsp;<b>⦿ Provide Covid Essential at best prices.</b></font><br>
+			<font color="white" size="6">&emsp;<b>⦿ Provide stats for the current scenereio of Covid-19 in the world.</b></font><br>
+			<font color="white" size="6">&emsp;<b>⦿ And Many More....</b></font><br>
+		</p><br><br>
+		<hr class="line"> <br> <br> <br> 
+		<div align="right">
+			<small><font size="3" color="white"> &copy; Group </font></small>
+		</div>
+	</div>
+	</section>
+
+</body>
+</html>
